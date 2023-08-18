@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+h3,
+p,
+button,
+a {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+.mainbg {
+  background-color: var(--Pale-blue);
+  background-image: url("./images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+@media (width > 500px) {
+  .mainbg {
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.card {
+  margin: 30px auto;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+@media (width > 500px) {
+  .card {
+    margin: 100px auto;
+  }
+}
+
+.illu img {
+  width: 400px;
+  max-width: 100%;
+}
+
+.sec1 h3 {
+  font-weight: 900;
+  color: var(--Dark-blue);
+}
+
+.sec1 p {
+  font-weight: 500;
+  color: var(--Desaturated-blue);
+}
+
+.sec2 {
+  background-color: var(--Very-pale-blue);
+}
+
+.sec2 .p1 {
+  font-weight: 700;
+  color: var(--Dark-blue);
+}
+
+.sec2 .p2 {
+  font-weight: 500;
+  color: var(--Desaturated-blue);
+}
+
+.sec2 a {
+  font-weight: 700;
+  color: var(--Bright-blue);
+  /* font-size: 14px; */
+}
+
+.sec2 a:hover {
+  text-decoration: none;
+  color: hsl(245, 35%, 52%);
+  cursor: pointer;
+}
+
+.sec3 button {
+  background-color: var(--Bright-blue);
+  font-weight: 700;
+  color: var(--Very-pale-blue);
+  border: none;
+  padding: 12px 22%;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+@media (width > 500px) {
+  .sec3 button {
+    padding: 12px 28%;
+  }
+}
+
+.sec3 button:hover {
+  background-color: hsl(245, 35%, 52%);
+  cursor: pointer;
+}
+
+.can p {
+  font-weight: 700;
+  color: var(--Desaturated-blue);
+}
+
+.can p:hover {
+  color: var(--Dark-blue);
+  cursor: pointer;
+}
